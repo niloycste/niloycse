@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow-y: auto;
 }
 
+/* General Header Styles */
 #header * {
   transition: ease-in-out 0s;
 }
@@ -94,29 +95,23 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+/* Social Links (Scoped to #header only) */
 #header .social-links {
   margin-top: 40px;
   display: flex;
+  justify-content: center;
+  gap: 20px; /* Matches your inline style */
 }
 
-/* #header .social-links a {
-  font-size: 16px; 
+#header .social-links a {
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff; 
-  line-height: 1;
-  margin-right: 8px;
-  border-radius: 50%;
+  color: inherit; /* Uses the color from inline styles */
+  text-decoration: none;
   width: 40px;
   height: 40px;
-} */
-
-#header .social-links a{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #header .social-links a:hover {
@@ -124,6 +119,12 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
 }
 
+/* Ensure social-links doesn’t appear in other headers */
+header:not(#header) .social-links {
+  display: none !important;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 992px) {
   #header h1 {
     font-size: 36px;
