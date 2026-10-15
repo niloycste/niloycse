@@ -2445,12 +2445,13 @@ section .section-title p + h2 {
 }
 
 .news-announcement {
-  margin-bottom: 22px;
+  max-width: 900px;
+  margin: 0 auto 22px;
 }
 
 .news-announcement img {
   aspect-ratio: auto;
-  max-height: 520px;
+  max-height: 395px;
   object-fit: contain;
   background: #ffffff;
 }
