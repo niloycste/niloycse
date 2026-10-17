@@ -2449,6 +2449,10 @@ section .section-title p + h2 {
   margin: 0 auto 22px;
 }
 
+.news-fdp {
+  margin-top: 46px;
+}
+
 .news-announcement img {
   aspect-ratio: auto;
   max-height: 395px;
